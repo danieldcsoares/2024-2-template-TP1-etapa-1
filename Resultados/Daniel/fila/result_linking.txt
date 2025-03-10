@@ -1,0 +1,15 @@
+/usr/bin/ld: Resultados/Daniel/fila/main.o: in function `atribuiTicketsParaTecnicos':
+main.c:(.text+0xd96): undefined reference to `getQtdTicketsNaFila'
+/usr/bin/ld: main.c:(.text+0xe1d): undefined reference to `getTicketNaFila'
+/usr/bin/ld: Resultados/Daniel/fila/main.o: in function `geraRelatorioGeral':
+main.c:(.text+0x10a7): undefined reference to `getQtdTicketsNaFila'
+/usr/bin/ld: main.c:(.text+0x10cb): undefined reference to `getQtdTicketsPorStatusNaFila'
+/usr/bin/ld: main.c:(.text+0x10ef): undefined reference to `getQtdTicketsPorStatusNaFila'
+/usr/bin/ld: Resultados/Daniel/fila/main.o: in function `main':
+main.c:(.text+0x1a70): undefined reference to `criaFila'
+/usr/bin/ld: main.c:(.text+0x1c82): undefined reference to `insereTicketFila'
+/usr/bin/ld: main.c:(.text+0x1d68): undefined reference to `insereTicketFila'
+/usr/bin/ld: main.c:(.text+0x1e41): undefined reference to `insereTicketFila'
+/usr/bin/ld: main.c:(.text+0x1ed8): undefined reference to `notificaFila'
+/usr/bin/ld: main.c:(.text+0x216f): undefined reference to `desalocaFila'
+collect2: error: ld returned 1 exit status

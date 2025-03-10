@@ -1,0 +1,4 @@
+software.c: In function ‘criaSoftware’:
+software.c:30:5: warning: ‘*s.nome’ is used uninitialized [-Wuninitialized]
+   30 |     strcpy(s->nome, nome);
+      |     ^~~~~~~~~~~~~~~~~~~~~
