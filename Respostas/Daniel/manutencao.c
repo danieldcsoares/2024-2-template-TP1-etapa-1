@@ -6,7 +6,7 @@
 struct Manutencao{
     char* nome;
     char* local;
-    char* estado
+    char* estado;
     int tempoEstimado;
     char* setor;
 };
@@ -35,7 +35,7 @@ Manutencao *criaManutencao(char *nome, char *local, char* estado){
 Manutencao *lerManutencao(){
     Manutencao* m = (Manutencao*) malloc (sizeof(Manutencao));
     m->nome = (char*) malloc(sizeof(char) * MAX_TAM_NOME_MANUTENCAO);
-    m->local = (char*) malloc(sizeof(char) * MAX_TAM_LOCAL);
+    m->local = (char*) malloc(sizeof(char) * MAX_TAM_LOCAL_MANUTENCAO);
     m->estado = (char*) malloc(sizeof(char) * MAX_TAM_ESTADO);
 
     scanf("%[^\n]\n", m->nome);
@@ -114,11 +114,11 @@ char getTipoManutencao(){
 void desalocaManutencao(void *m){
     if(m != NULL){
         Manutencao* man = (Manutencao*) m;
-        free(m->nome);
-        free(m->local);
-        free(m->estado);
-        free(m->setor);
-        free(m);
+        free(man->nome);
+        free(man->local);
+        free(man->estado);
+        free(man->setor);
+        free(man);
     }
 }
 
