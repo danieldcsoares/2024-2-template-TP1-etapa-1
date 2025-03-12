@@ -7,6 +7,8 @@
 #include "fila.h"
 #include "outros.h"
 #include "data.h"
+#include "usuario.h"
+#include "tecnico.h"
 
 int main(){
     /*Manutencao* man;
@@ -21,9 +23,13 @@ int main(){
     notificaOutros(o);
     desalocaOutros(o);*/
 
-    Data* d = lerData();
+    /*Data* d = lerData();
     imprimeData(d);
-    desalocaData(d);
+    desalocaData(d);*/
+    
+    /*Tecnico* t = lerTecnico();
+    imprimeTecnico(t);
+    desalocaTecnico(t);*/
 
     return 0;
 }

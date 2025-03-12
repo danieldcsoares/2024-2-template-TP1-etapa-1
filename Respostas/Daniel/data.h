@@ -3,6 +3,8 @@
 
 typedef struct Data Data;
 
+Data *criarData(int dia, int mes, int ano);
+
 /*
  * Função que lê uma data no formato dd/mm/aaaa
  * e retorna a Data lida
