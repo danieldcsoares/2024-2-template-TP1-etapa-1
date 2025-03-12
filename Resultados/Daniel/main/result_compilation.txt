@@ -1,2 +1,96 @@
-cc1: fatal error: *.c: No such file or directory
-compilation terminated.
+manutencao.c:10:5: error: expected ‘:’, ‘,’, ‘;’, ‘}’ or ‘__attribute__’ before ‘int’
+   10 |     int tempoEstimado;
+      |     ^~~
+manutencao.c: In function ‘criaManutencao’:
+manutencao.c:26:13: error: ‘Manutencao’ has no member named ‘estado’
+   26 |     strcpy(m->estado, estado);
+      |             ^~
+manutencao.c: In function ‘lerManutencao’:
+manutencao.c:39:6: error: ‘Manutencao’ has no member named ‘estado’
+   39 |     m->estado = (char*) malloc(sizeof(char) * MAX_TAM_ESTADO);
+      |      ^~
+manutencao.c:42:24: error: ‘Manutencao’ has no member named ‘estado’
+   42 |     scanf("%[^\n]\n", m->estado);
+      |                        ^~
+manutencao.c: In function ‘setSetorUsuarioManutencao’:
+manutencao.c:49:6: error: ‘Manutencao’ has no member named ‘setor’
+   49 |     m->setor = (char*) malloc(sizeof(char) * MAX_TAM_SETOR);
+      |      ^~
+manutencao.c:50:13: error: ‘Manutencao’ has no member named ‘setor’
+   50 |     strcpy(m->setor,setor);
+      |             ^~
+manutencao.c: In function ‘setTempoEstimadoManutencao’:
+manutencao.c:60:16: error: ‘Manutencao’ has no member named ‘estado’
+   60 |     if(strcmp(m->estado, "RUIM") == 0){
+      |                ^~
+manutencao.c:61:10: error: ‘Manutencao’ has no member named ‘tempoEstimado’
+   61 |         m->tempoEstimado = 3;
+      |          ^~
+manutencao.c:64:20: error: ‘Manutencao’ has no member named ‘estado’
+   64 |         if(strcmp(m->estado, "REGULAR") == 0){
+      |                    ^~
+manutencao.c:65:14: error: ‘Manutencao’ has no member named ‘tempoEstimado’
+   65 |             m->tempoEstimado = 2;
+      |              ^~
+manutencao.c:68:24: error: ‘Manutencao’ has no member named ‘estado’
+   68 |             if(strcmp(m->estado, "BOM") == 0){
+      |                        ^~
+manutencao.c:69:18: error: ‘Manutencao’ has no member named ‘tempoEstimado’
+   69 |                 m->tempoEstimado = 1;
+      |                  ^~
+manutencao.c:75:16: error: ‘Manutencao’ has no member named ‘setor’
+   75 |     if(strcmp(m->setor, "RH") == 0){
+      |                ^~
+manutencao.c:79:20: error: ‘Manutencao’ has no member named ‘setor’
+   79 |         if(strcmp(m->setor, "FINANCEIRO") == 0){
+      |                    ^~
+manutencao.c:83:25: error: ‘Manutencao’ has no member named ‘setor’
+   83 |             if((strcmp(m->setor, "P&D") == 0) || (strcmp(m->setor, "VENDAS") == 0) || (strcmp(m->setor, "MARKETING") == 0)){
+      |                         ^~
+manutencao.c:83:59: error: ‘Manutencao’ has no member named ‘setor’
+   83 |             if((strcmp(m->setor, "P&D") == 0) || (strcmp(m->setor, "VENDAS") == 0) || (strcmp(m->setor, "MARKETING") == 0)){
+      |                                                           ^~
+manutencao.c:83:96: error: ‘Manutencao’ has no member named ‘setor’
+   83 |             if((strcmp(m->setor, "P&D") == 0) || (strcmp(m->setor, "VENDAS") == 0) || (strcmp(m->setor, "MARKETING") == 0)){
+      |                                                                                                ^~
+manutencao.c:89:6: error: ‘Manutencao’ has no member named ‘tempoEstimado’
+   89 |     m->tempoEstimado = m->tempoEstimado * fator;
+      |      ^~
+manutencao.c:89:25: error: ‘Manutencao’ has no member named ‘tempoEstimado’
+   89 |     m->tempoEstimado = m->tempoEstimado * fator;
+      |                         ^~
+manutencao.c: In function ‘getTempoEstimadoManutencao’:
+manutencao.c:99:13: error: ‘Manutencao’ has no member named ‘tempoEstimado’
+   99 |     return m->tempoEstimado;
+      |             ^~
+manutencao.c: In function ‘desalocaManutencao’:
+manutencao.c:117:15: warning: dereferencing ‘void *’ pointer
+  117 |         free(m->nome);
+      |               ^~
+manutencao.c:117:15: error: request for member ‘nome’ in something not a structure or union
+manutencao.c:118:15: warning: dereferencing ‘void *’ pointer
+  118 |         free(m->local);
+      |               ^~
+manutencao.c:118:15: error: request for member ‘local’ in something not a structure or union
+manutencao.c:119:15: warning: dereferencing ‘void *’ pointer
+  119 |         free(m->estado);
+      |               ^~
+manutencao.c:119:15: error: request for member ‘estado’ in something not a structure or union
+manutencao.c:120:15: warning: dereferencing ‘void *’ pointer
+  120 |         free(m->setor);
+      |               ^~
+manutencao.c:120:15: error: request for member ‘setor’ in something not a structure or union
+manutencao.c:116:21: warning: unused variable ‘man’ [-Wunused-variable]
+  116 |         Manutencao* man = (Manutencao*) m;
+      |                     ^~~
+manutencao.c: In function ‘notificaManutencao’:
+manutencao.c:133:46: error: ‘Manutencao’ has no member named ‘estado’
+  133 |     printf("- Estado de conservacao: %s\n", m->estado);
+      |                                              ^~
+manutencao.c:135:40: error: ‘Manutencao’ has no member named ‘tempoEstimado’
+  135 |     printf("- Tempo estimado: %dh\n", m->tempoEstimado);
+      |                                        ^~
+manutencao.c: In function ‘getTempoEstimadoManutencao’:
+manutencao.c:100:1: warning: control reaches end of non-void function [-Wreturn-type]
+  100 | }
+      | ^

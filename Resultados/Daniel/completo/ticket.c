@@ -33,7 +33,6 @@ Ticket *criaTicket(char *cpfSol, void *dado, func_ptr_tempoEstimado getTempo, fu
     //t->dado = (void*) malloc(sizeof(void));
     
     strcpy(t->cpf, cpfSol);
-    //t->cpf = strdup(cpfSol);
     t->tempo = getTempo;
     t->tipo = getTipo;
     t->notifica = notifica;
@@ -51,7 +50,6 @@ Ticket *criaTicket(char *cpfSol, void *dado, func_ptr_tempoEstimado getTempo, fu
  * @param id ID a ser atribuido ao ticket
  */
 void setIDTicket(Ticket *d, char *id){
-    //d->id = strdup(id);
     strcpy(d->id, id);
 }
 
