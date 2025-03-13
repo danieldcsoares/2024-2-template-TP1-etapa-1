@@ -4,8 +4,8 @@
 #include "outros.h"
 
 struct Outros{
-    char* descricao;
-    char* local;
+    char descricao[MAX_TAM_DESCRICAO];
+    char local[MAX_TAM_LOCAL_OUTROS];
     int nivel;
     int tempoEstimado;
 };
@@ -32,8 +32,8 @@ Outros *criaOutros(char *descricao, char *local, int nivel){
  */
 Outros *lerOutros(){
     Outros* o = (Outros*) malloc (sizeof(Outros));
-    o->descricao = (char*) malloc(sizeof(char) * MAX_TAM_DESCRICAO);
-    o->local = (char*) malloc(sizeof(char) * MAX_TAM_LOCAL_OUTROS);
+    /*o->descricao = (char*) malloc(sizeof(char) * MAX_TAM_DESCRICAO);
+    o->local = (char*) malloc(sizeof(char) * MAX_TAM_LOCAL_OUTROS);*/
 
     scanf("%[^\n]\n", o->descricao);
     scanf("%[^\n]\n", o->local);
@@ -77,8 +77,8 @@ char getTipoOutros(){
 void desalocaOutros(void *o){
     if(o != NULL){
         Outros* outros = (Outros*) o;
-        free(outros->descricao);
-        free(outros->local);
+        /*free(outros->descricao);
+        free(outros->local);*/
         free(outros);
     }
 }
