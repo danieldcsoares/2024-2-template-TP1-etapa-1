@@ -4,10 +4,10 @@
 #include "software.h"
 
 struct Software{
-    char* nome;
-    char* categoria;
+    char nome[MAX_TAM_NOME_SOFTWARE];
+    char categoria[MAX_TAM_CAT];
     int impacto;
-    char* motivo;
+    char motivo[MAX_TAM_MOTIVO];
     int tempoEstimado;
 };
 
@@ -40,9 +40,9 @@ Software *criaSoftware(char *nome, char *categoria, int impacto, char *motivo){
  */
 Software *lerSoftware(){
     Software* s = (Software*) malloc (sizeof(Software));
-    s->nome = (char*) malloc(sizeof(char) * MAX_TAM_NOME_SOFTWARE);
+    /*s->nome = (char*) malloc(sizeof(char) * MAX_TAM_NOME_SOFTWARE);
     s->categoria = (char*) malloc(sizeof(char) * MAX_TAM_CAT);
-    s->motivo = (char*) malloc(sizeof(char) * MAX_TAM_MOTIVO);
+    s->motivo = (char*) malloc(sizeof(char) * MAX_TAM_MOTIVO);*/
 
     scanf("%[^\n]\n", s->nome);
     scanf("%[^\n]\n", s->categoria);
@@ -100,9 +100,9 @@ char getTipoSoftware(){
 void desalocaSoftware(void *s){
     if(s != NULL){
         Software* sw = (Software*) s;
-        free(sw->nome);
+        /*free(sw->nome);
         free(sw->categoria);
-        free(sw->motivo);
+        free(sw->motivo);*/
         free(sw);
     }
 }

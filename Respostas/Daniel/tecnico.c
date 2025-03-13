@@ -5,16 +5,19 @@
 #include "tecnico.h"
 
 struct Tecnico{
-    char* nome;
+    /*char* nome;
     char* cpf;
     Data* dataNascimento;
     char* telefone;
-    char* genero;
-    char* area;
+    char* genero;*/
+    char area[MAX_TAM_AREA];
     float salario;
     int disponibilidade;
     int tempoTrabalhado;
 };
+
+//MUDAR TUDO NO .C E NO .H
+//TIRAR ALOCACAO DINAMICA DE AREA
 
 Tecnico *criaTecnico(char *nome, char *cpf, Data *dataNascimento, char *telefone, char *genero, char *area, float salario, int disponibilidade){
     Tecnico* t = (Tecnico*) malloc (sizeof(Tecnico));

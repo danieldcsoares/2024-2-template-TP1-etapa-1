@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ==111689== Memcheck, a memory error detector
 ==111689== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
 ==111689== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
@@ -13,3 +14,20 @@
 ==111689== 
 ==111689== For lists of detected and suppressed errors, rerun with: -s
 ==111689== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=======
+==143741== Memcheck, a memory error detector
+==143741== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==143741== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==143741== Command: Resultados/Daniel/main/prog Resultados/Daniel/main/Casos/5
+==143741== Parent PID: 143740
+==143741== 
+==143741== 
+==143741== HEAP SUMMARY:
+==143741==     in use at exit: 0 bytes in 0 blocks
+==143741==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==143741== 
+==143741== All heap blocks were freed -- no leaks are possible
+==143741== 
+==143741== For lists of detected and suppressed errors, rerun with: -s
+==143741== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+>>>>>>> 7fb517a7cc3a6596606b0ab2708f800bc94fcd5f

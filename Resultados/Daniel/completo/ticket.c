@@ -4,8 +4,8 @@
 #include <string.h>
 
 struct Ticket{
-    char* cpf;
-    char* id;
+    char cpf[MAX_TAM_CPF];
+    char id[MAX_TAM_ID];
     void* dado;
     func_ptr_tempoEstimado tempo;
     func_ptr_tipo tipo;
@@ -28,8 +28,8 @@ struct Ticket{
 Ticket *criaTicket(char *cpfSol, void *dado, func_ptr_tempoEstimado getTempo, func_ptr_tipo getTipo, func_ptr_notifica notifica, func_ptr_desaloca desaloca){
     
     Ticket* t = (Ticket*) malloc(sizeof(Ticket));
-    t->cpf = (char*) malloc (MAX_TAM_CPF * sizeof(char));
-    t->id = (char*) malloc(MAX_TAM_ID * sizeof(char));
+    /*t->cpf = (char*) malloc (MAX_TAM_CPF * sizeof(char));
+    t->id = (char*) malloc(MAX_TAM_ID * sizeof(char));*/
     //t->dado = (void*) malloc(sizeof(void));
     
     strcpy(t->cpf, cpfSol);
@@ -103,8 +103,8 @@ char getStatusTicket(Ticket *t){
  */
 void desalocaTicket(Ticket *doc){
     if(doc != NULL){
-        free(doc->cpf);
-        free(doc->id);
+        /*free(doc->cpf);
+        free(doc->id);*/
         free(doc->dado);
         doc->desaloca(doc);
     }

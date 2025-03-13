@@ -6,9 +6,19 @@ outros.c: In function ‘criaOutros’:
 outros.c:22:5: warning: ‘*o.descricao’ is used uninitialized [-Wuninitialized]
    22 |     strcpy(o->descricao, descricao);
       |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<<<<<<< HEAD
 software.c: In function ‘criaSoftware’:
 software.c:30:5: warning: ‘*s.nome’ is used uninitialized [-Wuninitialized]
    30 |     strcpy(s->nome, nome);
+=======
+tecnico.c: In function ‘criaTecnico’:
+tecnico.c:22:5: warning: ‘*t.nome’ is used uninitialized [-Wuninitialized]
+   22 |     strcpy(t->nome, nome);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+usuario.c: In function ‘criaUsuario’:
+usuario.c:22:5: warning: ‘*u.nome’ is used uninitialized [-Wuninitialized]
+   22 |     strcpy(u->nome, nome);
+>>>>>>> 7fb517a7cc3a6596606b0ab2708f800bc94fcd5f
       |     ^~~~~~~~~~~~~~~~~~~~~
 tecnico.c: In function ‘criaTecnico’:
 tecnico.c:22:5: warning: ‘*t.nome’ is used uninitialized [-Wuninitialized]

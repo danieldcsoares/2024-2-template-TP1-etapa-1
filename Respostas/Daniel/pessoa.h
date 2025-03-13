@@ -1,6 +1,11 @@
 #ifndef _PESSOA_H
 #define _PESSOA_H
 
+#define MAX_TAM_NOME 100
+#define MAX_TAM_CPF 15
+#define MAX_TAM_TELEFONE 15
+#define MAX_TAM_GENERO 10
+
 /**
  * @brief Função de callback para imprimir uma pessoa
  * @param dado um tipo genérico para representar os tipos de pessoas.
