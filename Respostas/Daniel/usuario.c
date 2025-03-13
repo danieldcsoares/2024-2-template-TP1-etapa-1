@@ -5,16 +5,18 @@
 #include "usuario.h"
 
 struct Usuario{
-    char* nome;
+    /*char* nome;
     char* cpf;
     Data* dataNascimento;
     char* telefone;
-    char* genero;
-    char* setor;
+    char* genero;*/
+    char setor[MAX_TAM_SETOR];
     int ticketsSolicitados;
 };
 
 
+//MUDAR TUDO NO .C E NO .H
+//TIRAR ALOCACAO DINAMICA DE SETOR
 
 Usuario *criaUsuario(char *nome, char *cpf, Data *dataNascimento, char *telefone, char *genero, char *setor){
     Usuario* u = (Usuario*) malloc (sizeof(Usuario));
