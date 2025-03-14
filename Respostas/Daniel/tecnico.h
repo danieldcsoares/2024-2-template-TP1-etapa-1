@@ -3,6 +3,8 @@
 
 #define MAX_TAM_AREA 7
 
+#include "data.h"
+
 typedef struct Tecnico Tecnico;
 
 Tecnico *criaTecnico(char *nome, char *cpf, Data *dataNascimento, char *telefone, char *genero, char *area, float salario, int disponibilidade);

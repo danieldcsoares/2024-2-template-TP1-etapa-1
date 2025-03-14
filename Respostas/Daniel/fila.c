@@ -71,6 +71,7 @@ void insereTicketFila(Fila *f, char *cpfSol, void *dado, func_ptr_tempoEstimado 
 
                       }
 
+
 /**
  * @brief Recupera a quantidade de tickets  em uma fila
  * @param f  Estrutura Fila inicializada.
