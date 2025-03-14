@@ -48,24 +48,58 @@ int main(){
             char tipoTicket[MAX_TAM_TIPO_TICKET];
             scanf("%s\n", tipoTicket);
 
-            switch(tipoTicket){
-                case "SOFTWARE":
-
-                case "MANUTENCAO":
-
-                case "OUTROS":
-            }
-
             char setorSolicitacao[MAX_TAM_SETOR];
-            if(getSetorUsuarioPorCPF(cpfSolicitacao, gerencia) != NULL){
-                strcpy(setorSolicitacao, getSetorUsuarioPorCPF(cpfSolicitacao, gerencia));
+            strcpy(setorSolicitacao, getSetorUsuarioPorCPF(cpfSolicitacao, gerencia));
 
+            void* ticket = NULL;
+            func_ptr_tempoEstimado tempo = NULL;
+            func_ptr_tipo tipo = NULL;
+            func_ptr_notifica notifica = NULL;
+            func_ptr_desaloca desaloca = NULL;
+
+
+            if(strcmp(tipoTicket, "SOFTWARE") == 0){
+                ticket = lerSoftware();
+                setTempoEstimadoSoftware(ticket);
+                tempo = getTempoEstimadoSoftware;
+                tipo = getTipoSoftware;
+                notifica = notificaSoftware;
+                desaloca = desalocaSoftware;
+            }
+
+            if(strcmp(tipoTicket, "MANUTENCAO") == 0){
+                ticket = lerManutencao();
+                setTempoEstimadoManutencao(ticket);
+                setSetorUsuarioManutencao(ticket, setorSolicitacao);
+                tempo = getTempoEstimadoManutencao;
+                tipo = getTipoManutencao;
+                notifica = notificaManutencao;
+                desaloca = desalocaManutencao;
+            }
+
+            if(strcmp(tipoTicket, "OUTROS") == 0){
+                ticket = lerOutros();
+                setTempoEstimadoOutros(ticket);
+                tempo = getTempoEstimadoOutros;
+                tipo = getTipoOutros;
+                notifica = notificaOutros;
+                desaloca = desalocaOutros;
             }
 
 
+            if(getSetorUsuarioPorCPF(cpfSolicitacao, gerencia) != NULL){
+                insereTicketFila(fila, cpfSolicitacao, ticket, tempo, tipo, notifica, desaloca);
+            }
             
+            printf("pronto\n");
 
-            
+            //SE DER PROBLEMA DE VALGRIND, DESALOCAR TICKET
+        }
+
+        if(comando == 'E'){
+            char acao[20];
+            scanf("%[^\n]\n", acao);
+
 
         }
 

@@ -74,7 +74,7 @@ char getTipoUsuario(){
 }
 
 char* getCPFUsuario(Usuario *u){
-    return u->cpf;
+    return getCPFPessoa(u->pessoa);
 }
 
 void desalocaUsuario(void *u){

@@ -5,6 +5,7 @@
 #include "tecnico.h"
 #include "pessoa.h"
 #include "usuario.h"
+#include "gerencia.h"
 
 struct Gerencia{
     Usuario** usuarios;
@@ -59,9 +60,9 @@ void desalocaGerencia(Gerencia *g){
         free(g->usuarios);
 
         for(int i = 0; i < g->qtdTecnicos; i++){
-            desalocaTecnico(g->tecnico[i]);
+            desalocaTecnico(g->tecnicos[i]);
         }
-        free(g->tecnico);
+        free(g->tecnicos);
 
         free(g);
     }
@@ -103,7 +104,7 @@ int verificaCPFTecnico(Tecnico* t, Gerencia* g){
 
 char* getSetorUsuarioPorCPF(char* cpf, Gerencia *g){
     for(int i = 0; i < g->qtdUsuarios; i++){
-        if(strcmp(getCPFUsuario(u), getCPFUsuario(g->usuarios[i])) == 0){
+        if(strcmp(cpf, getCPFUsuario(g->usuarios[i])) == 0){
             return getSetorUsuario(g->usuarios[i]);
         }
     }

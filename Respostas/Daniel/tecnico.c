@@ -77,7 +77,7 @@ char getTipoTecnico(){
 }
 
 char* getCPFTecnico(Tecnico *t){
-    return t->cpf;
+    return getCPFPessoa(t->pessoa);
 }
 
 void desalocaTecnico(void *t){

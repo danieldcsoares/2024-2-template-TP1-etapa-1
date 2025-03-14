@@ -17,6 +17,8 @@ void incrementaTicketsSolicitados(Usuario *u);
 
 char getTipoUsuario();
 
+char* getCPFUsuario(Usuario *u);
+
 void desalocaUsuario(void *u);
 
 void imprimeUsuario(void *usuario);

@@ -17,6 +17,8 @@ void incrementaTempoTrabalhado(Tecnico *t);
 
 char getTipoTecnico();
 
+char* getCPFTecnico(Tecnico *t);
+
 void desalocaTecnico(void *t);
 
 void imprimeTecnico(void *t);

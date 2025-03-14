@@ -46,7 +46,7 @@ Manutencao *lerManutencao(){
 }
 
 void setSetorUsuarioManutencao(Manutencao *m, char *setor){
-    m->setor = (char*) malloc(sizeof(char) * MAX_TAM_SETOR);
+    //m->setor = (char*) malloc(sizeof(char) * MAX_TAM_SETOR);
     strcpy(m->setor,setor);
 }
 
