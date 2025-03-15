@@ -1,33 +1,61 @@
-<<<<<<< HEAD
-==112626== Memcheck, a memory error detector
-==112626== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==112626== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==112626== Command: Resultados/Daniel/completo/prog Resultados/Daniel/completo/Casos/6
-==112626== Parent PID: 112625
-==112626== 
-==112626== 
-==112626== HEAP SUMMARY:
-==112626==     in use at exit: 0 bytes in 0 blocks
-==112626==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==112626== 
-==112626== All heap blocks were freed -- no leaks are possible
-==112626== 
-==112626== For lists of detected and suppressed errors, rerun with: -s
-==112626== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-=======
-==144664== Memcheck, a memory error detector
-==144664== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==144664== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==144664== Command: Resultados/Daniel/completo/prog Resultados/Daniel/completo/Casos/6
-==144664== Parent PID: 144663
-==144664== 
-==144664== 
-==144664== HEAP SUMMARY:
-==144664==     in use at exit: 0 bytes in 0 blocks
-==144664==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==144664== 
-==144664== All heap blocks were freed -- no leaks are possible
-==144664== 
-==144664== For lists of detected and suppressed errors, rerun with: -s
-==144664== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
->>>>>>> 7fb517a7cc3a6596606b0ab2708f800bc94fcd5f
+==386745== Memcheck, a memory error detector
+==386745== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==386745== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==386745== Command: Resultados/Daniel/completo/prog Resultados/Daniel/completo/Casos/6
+==386745== Parent PID: 386744
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==386745==    by 0x10AC6D: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x10AC70: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==386745==    by 0x10AC99: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x10AC9C: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==386745==    by 0x10ACC2: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x10ACC5: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==386745==    by 0x10ACE2: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x10ACE5: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==386745==    by 0x10AD02: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== Conditional jump or move depends on uninitialised value(s)
+==386745==    at 0x10AD05: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==386745== 
+==386745== 
+==386745== HEAP SUMMARY:
+==386745==     in use at exit: 0 bytes in 0 blocks
+==386745==   total heap usage: 67 allocs, 67 frees, 13,598 bytes allocated
+==386745== 
+==386745== All heap blocks were freed -- no leaks are possible
+==386745== 
+==386745== Use --track-origins=yes to see where uninitialised values come from
+==386745== For lists of detected and suppressed errors, rerun with: -s
+==386745== ERROR SUMMARY: 10 errors from 10 contexts (suppressed: 0 from 0)

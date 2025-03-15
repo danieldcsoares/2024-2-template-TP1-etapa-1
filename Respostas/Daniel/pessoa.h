@@ -35,6 +35,10 @@ Pessoa *lerPessoa();
 
 char *getCPFPessoa(Pessoa *p);
 
+Data* getDataNascimentoPessoa(Pessoa *p);
+
+char* getNomePessoa(Pessoa *p);
+
 void desalocaPessoa(Pessoa *doc);
 
 void imprimePessoa(Pessoa *doc);

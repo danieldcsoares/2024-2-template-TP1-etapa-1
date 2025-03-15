@@ -92,6 +92,6 @@ void notificaOutros(void *dado){
     printf("- Tipo: Outros\n");
     printf("- Descricao: %s\n", o->descricao);
     printf("- Local: %s\n", o->local);
-    printf("- Nivel de dificuldade: %d\n", o->nivel);
-    printf("- Tempo estimado: %dh\n", o->tempoEstimado);
+    printf("- Nivel de Dificuldade: %d\n", o->nivel);
+    printf("- Tempo Estimado: %dh\n", o->tempoEstimado);
 }

@@ -63,11 +63,21 @@ char* getSetorUsuario(Usuario *u){
     return u->setor;
 }
 
-
 void incrementaTicketsSolicitados(Usuario *u){
     u->ticketsSolicitados++;
 }
 
+void diminuiTicketsSolicitados(Usuario *u){
+    u->ticketsSolicitados--;
+}
+
+int getQtdTicketsUsuario(Usuario *u){
+    return u->ticketsSolicitados;
+}
+
+Data* getDataNascimentoUsuario(Usuario *u){
+    return getDataNascimentoPessoa(u->pessoa);
+}
 
 char getTipoUsuario(){
     return 'U';
@@ -75,6 +85,10 @@ char getTipoUsuario(){
 
 char* getCPFUsuario(Usuario *u){
     return getCPFPessoa(u->pessoa);
+}
+
+char* getNomeUsuario(Usuario *u){
+    return getNomePessoa(u->pessoa);
 }
 
 void desalocaUsuario(void *u){

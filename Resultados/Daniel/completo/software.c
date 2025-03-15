@@ -59,15 +59,15 @@ Software *lerSoftware(){
  */
 void setTempoEstimadoSoftware(Software *s){
     if(strcmp(s->categoria, "BUG") == 0){
-        s->tempoEstimado = 3;
+        s->tempoEstimado = TEMPO_ESTIMADO_BUG;
     }
     else{
         if(strcmp(s->categoria, "OUTROS") == 0){
-            s->tempoEstimado = 2;
+            s->tempoEstimado = TEMPO_ESTIMADO_OUTROS;
         }
         else{
             if(strcmp(s-> categoria, "DUVIDA") == 0){
-                s->tempoEstimado = 1;
+                s->tempoEstimado = TEMPO_ESTIMADO_DUVIDA;
             }
         }
     }

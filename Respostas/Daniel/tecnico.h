@@ -11,13 +11,23 @@ Tecnico *criaTecnico(char *nome, char *cpf, Data *dataNascimento, char *telefone
 
 Tecnico *lerTecnico();
 
-char* getSetorTecnico(Tecnico *t);
+char* getAreaTecnico(Tecnico *t);
 
-void incrementaTempoTrabalhado(Tecnico *t);
+void incrementaTempoTrabalhado(Tecnico *t, int tempo);
+
+void diminuiDisponibilidade(Tecnico *t, int tempo);
+
+int getTempoTrabalhadoTecnico(Tecnico *t);
+
+Data* getDataNascimentoTecnico(Tecnico *t);
 
 char getTipoTecnico();
 
 char* getCPFTecnico(Tecnico *t);
+
+int getDisponibilidadeTecnico(Tecnico *t);
+
+char* getNomeTecnico(Tecnico *t);
 
 void desalocaTecnico(void *t);
 

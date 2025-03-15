@@ -1,10 +1,6 @@
 #ifndef _USUARIO_H
 #define _USUARIO_H
 
-#define MAX_TAM_NOME_USUARIO 100
-#define MAX_TAM_CPF 15
-#define MAX_TAM_TELEFONE 15
-#define MAX_TAM_GENERO 10
 #define MAX_TAM_SETOR 12
 
 #include "data.h"
@@ -19,7 +15,17 @@ char* getSetorUsuario(Usuario *u);
 
 void incrementaTicketsSolicitados(Usuario *u);
 
+void diminuiTicketsSolicitados(Usuario *u);
+
+int getQtdTicketsUsuario(Usuario *u);
+
+Data* getDataNascimentoUsuario(Usuario *u);
+
 char getTipoUsuario();
+
+char* getCPFUsuario(Usuario *u);
+
+char* getNomeUsuario(Usuario *u);
 
 void desalocaUsuario(void *u);
 

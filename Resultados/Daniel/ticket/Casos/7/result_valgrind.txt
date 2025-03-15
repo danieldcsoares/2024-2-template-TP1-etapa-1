@@ -1,33 +1,15 @@
-<<<<<<< HEAD
-==114399== Memcheck, a memory error detector
-==114399== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==114399== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==114399== Command: Resultados/Daniel/ticket/prog Resultados/Daniel/ticket/Casos/7
-==114399== Parent PID: 114398
-==114399== 
-==114399== 
-==114399== HEAP SUMMARY:
-==114399==     in use at exit: 0 bytes in 0 blocks
-==114399==   total heap usage: 78 allocs, 78 frees, 14,754 bytes allocated
-==114399== 
-==114399== All heap blocks were freed -- no leaks are possible
-==114399== 
-==114399== For lists of detected and suppressed errors, rerun with: -s
-==114399== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-=======
-==146410== Memcheck, a memory error detector
-==146410== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==146410== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==146410== Command: Resultados/Daniel/ticket/prog Resultados/Daniel/ticket/Casos/7
-==146410== Parent PID: 146409
-==146410== 
-==146410== 
-==146410== HEAP SUMMARY:
-==146410==     in use at exit: 0 bytes in 0 blocks
-==146410==   total heap usage: 68 allocs, 68 frees, 14,704 bytes allocated
-==146410== 
-==146410== All heap blocks were freed -- no leaks are possible
-==146410== 
-==146410== For lists of detected and suppressed errors, rerun with: -s
-==146410== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
->>>>>>> 7fb517a7cc3a6596606b0ab2708f800bc94fcd5f
+==390170== Memcheck, a memory error detector
+==390170== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==390170== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==390170== Command: Resultados/Daniel/ticket/prog Resultados/Daniel/ticket/Casos/7
+==390170== Parent PID: 390169
+==390170== 
+==390170== 
+==390170== HEAP SUMMARY:
+==390170==     in use at exit: 0 bytes in 0 blocks
+==390170==   total heap usage: 68 allocs, 68 frees, 14,704 bytes allocated
+==390170== 
+==390170== All heap blocks were freed -- no leaks are possible
+==390170== 
+==390170== For lists of detected and suppressed errors, rerun with: -s
+==390170== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

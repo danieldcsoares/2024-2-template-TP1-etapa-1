@@ -1,33 +1,15 @@
-<<<<<<< HEAD
-==114822== Memcheck, a memory error detector
-==114822== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==114822== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==114822== Command: Resultados/Daniel/software/prog Resultados/Daniel/software/Casos/3
-==114822== Parent PID: 114821
-==114822== 
-==114822== 
-==114822== HEAP SUMMARY:
-==114822==     in use at exit: 0 bytes in 0 blocks
-==114822==   total heap usage: 63 allocs, 63 frees, 13,769 bytes allocated
-==114822== 
-==114822== All heap blocks were freed -- no leaks are possible
-==114822== 
-==114822== For lists of detected and suppressed errors, rerun with: -s
-==114822== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-=======
-==146826== Memcheck, a memory error detector
-==146826== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==146826== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==146826== Command: Resultados/Daniel/software/prog Resultados/Daniel/software/Casos/3
-==146826== Parent PID: 146825
-==146826== 
-==146826== 
-==146826== HEAP SUMMARY:
-==146826==     in use at exit: 0 bytes in 0 blocks
-==146826==   total heap usage: 60 allocs, 60 frees, 13,740 bytes allocated
-==146826== 
-==146826== All heap blocks were freed -- no leaks are possible
-==146826== 
-==146826== For lists of detected and suppressed errors, rerun with: -s
-==146826== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
->>>>>>> 7fb517a7cc3a6596606b0ab2708f800bc94fcd5f
+==390593== Memcheck, a memory error detector
+==390593== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==390593== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==390593== Command: Resultados/Daniel/software/prog Resultados/Daniel/software/Casos/3
+==390593== Parent PID: 390592
+==390593== 
+==390593== 
+==390593== HEAP SUMMARY:
+==390593==     in use at exit: 0 bytes in 0 blocks
+==390593==   total heap usage: 60 allocs, 60 frees, 13,740 bytes allocated
+==390593== 
+==390593== All heap blocks were freed -- no leaks are possible
+==390593== 
+==390593== For lists of detected and suppressed errors, rerun with: -s
+==390593== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

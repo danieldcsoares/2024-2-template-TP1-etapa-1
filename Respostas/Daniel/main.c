@@ -11,6 +11,7 @@
 #include "tecnico.h"
 #include "pessoa.h"
 #include "gerencia.h"
+#include "distribuicao.h"
 
 
 
@@ -30,7 +31,6 @@ int main(){
             if(verificaCPFTecnico(t, gerencia)){
                 insereTecnicoLista(gerencia, t);
             }
-            desalocaTecnico(t);
         }
 
         if(comando == 'U'){
@@ -38,18 +38,23 @@ int main(){
             if(verificaCPFUsuario(u, gerencia)){
                 insereUsuarioLista(gerencia, u);
             }
-            desalocaUsuario(u);
         }
 
         if(comando == 'A'){
             char cpfSolicitacao[MAX_TAM_CPF];
-            scanf("%s\n", cpfSolicitacao);
+            scanf("%[^\n]\n", cpfSolicitacao);
 
             char tipoTicket[MAX_TAM_TIPO_TICKET];
-            scanf("%s\n", tipoTicket);
+            scanf("%[^\n]\n", tipoTicket);
 
-            char setorSolicitacao[MAX_TAM_SETOR];
-            strcpy(setorSolicitacao, getSetorUsuarioPorCPF(cpfSolicitacao, gerencia));
+            char setorSolicitacao[MAX_TAM_SETOR] = "";
+            /*if(getSetorUsuarioPorCPF(cpfSolicitacao, gerencia) != NULL){
+                strcpy(setorSolicitacao, getSetorUsuarioPorCPF(cpfSolicitacao, gerencia));
+            }*/
+            char *setor = getSetorUsuarioPorCPF(cpfSolicitacao, gerencia);
+            if(setor != NULL) {
+                strcpy(setorSolicitacao, setor);
+            }
 
             void* ticket = NULL;
             func_ptr_tempoEstimado tempo = NULL;
@@ -87,24 +92,60 @@ int main(){
             }
 
 
-            if(getSetorUsuarioPorCPF(cpfSolicitacao, gerencia) != NULL){
+            if(setor != NULL){
                 insereTicketFila(fila, cpfSolicitacao, ticket, tempo, tipo, notifica, desaloca);
+                atualizaTicketsSolicitados(gerencia, cpfSolicitacao, '+');
             }
-            
-            printf("pronto\n");
+            else {
+                desaloca(ticket);
+            }
 
-            //SE DER PROBLEMA DE VALGRIND, DESALOCAR TICKET
         }
 
         if(comando == 'E'){
             char acao[20];
             scanf("%[^\n]\n", acao);
 
+            if(strcmp(acao, "DISTRIBUI") == 0){
+                Distribuicao *d = criaDistribuicao(gerencia,fila);
+                distribuiTickets(d);
+                desalocaDistribuicao(d);
+            }
+
+            if(strcmp(acao, "NOTIFICA") == 0){
+                printf("----- FILA DE TICKETS -----\n");
+                notificaFila(fila);
+                printf("---------------------------\n\n");
+            }
+
+            if(strcmp(acao, "USUARIOS") == 0){
+                imprimeBancoDeUsuarios(gerencia);
+            }
+
+            if(strcmp(acao, "TECNICOS") == 0){
+                imprimeBancoDeTecnicos(gerencia);
+            }
+
+            if(strcmp(acao, "RANKING USUARIOS") == 0){
+                imprimeRankingUsuarios(gerencia);
+            }
+
+            if(strcmp(acao, "RANKING TECNICOS") == 0){
+                imprimeRankingTecnicos(gerencia);
+            }
+
+            if(strcmp(acao, "RELATORIO") == 0){
+                imprimeRelatorio(gerencia, fila);
+            }
 
         }
 
 
-
+        if(comando == 'F'){
+            desalocaGerencia(gerencia);
+            desalocaFila(fila);
+            break;
+        }
 
     }
 

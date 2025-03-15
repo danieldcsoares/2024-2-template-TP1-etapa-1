@@ -62,6 +62,10 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Copiando Arquivos Extras do Aluno:
  - Copiando Respostas/Daniel/data.c para Resultados/Daniel/main
  - Copiando Respostas/Daniel/data.c para Resultados/Daniel/completo
+ - Copiando Respostas/Daniel/distribuicao.c para Resultados/Daniel/main
+ - Copiando Respostas/Daniel/distribuicao.c para Resultados/Daniel/completo
+ - Copiando Respostas/Daniel/gerencia.c para Resultados/Daniel/main
+ - Copiando Respostas/Daniel/gerencia.c para Resultados/Daniel/completo
  - Copiando Respostas/Daniel/manutencao.c para Resultados/Daniel/main
  - Copiando Respostas/Daniel/manutencao.c para Resultados/Daniel/completo
  - Copiando Respostas/Daniel/outros.c para Resultados/Daniel/main
@@ -74,6 +78,10 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Copiando Respostas/Daniel/usuario.c para Resultados/Daniel/completo
  - Copiando Respostas/Daniel/data.h para Resultados/Daniel/main
  - Copiando Respostas/Daniel/data.h para Resultados/Daniel/completo
+ - Copiando Respostas/Daniel/distribuicao.h para Resultados/Daniel/main
+ - Copiando Respostas/Daniel/distribuicao.h para Resultados/Daniel/completo
+ - Copiando Respostas/Daniel/gerencia.h para Resultados/Daniel/main
+ - Copiando Respostas/Daniel/gerencia.h para Resultados/Daniel/completo
  - Copiando Respostas/Daniel/manutencao.h para Resultados/Daniel/main
  - Copiando Respostas/Daniel/manutencao.h para Resultados/Daniel/completo
  - Copiando Respostas/Daniel/outros.h para Resultados/Daniel/main
@@ -124,87 +132,87 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 30, frees: 30, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 2:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 40, frees: 40, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 3:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 52, frees: 52, errors: 45 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 4:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Incorreto! allocs: 53, frees: 53, errors: 10 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
  - Pasta main / Caso 5:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Incorreto! allocs: 62, frees: 56, errors: 11 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
  - Pasta main / Caso 6:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Incorreto! allocs: 64, frees: 64, errors: 10 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
  - Pasta main / Caso 7:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/7/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 64, frees: 64, errors: 28 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 8:
  - Arquivo de output gerado: Resultados/Daniel/main/Casos/8/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 76, frees: 76, errors: 34 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta main (máximo 7.50) - 0 de 80 - 0% de 7.50: 0.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 7.50) - 35.00 de 80 - 43.00% de 7.50: 3.22.
  -----
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 31, frees: 31, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 41, frees: 41, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 55, frees: 55, errors: 45 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Incorreto! allocs: 54, frees: 54, errors: 10 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
  - Pasta completo / Caso 5:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Incorreto! allocs: 65, frees: 59, errors: 11 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
  - Pasta completo / Caso 6:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Incorreto! allocs: 67, frees: 67, errors: 10 | Desconto do valgrind 50.00%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 50.0% (desconto do valgrind) = 5.00 de 10 pontos.
  - Pasta completo / Caso 7:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/7/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 67, frees: 67, errors: 28 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 8:
  - Arquivo de output gerado: Resultados/Daniel/completo/Casos/8/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 79, frees: 79, errors: 34 | Desconto do valgrind 50.00%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta completo (máximo 0.0) - 0 de 80 - 0% de 0.0: 0.
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta completo (máximo 0.0) - 35.00 de 80 - 43.00% de 0.0: 0.
  -----
  - Pasta fila / Caso 1:
  - Arquivo de output gerado: Resultados/Daniel/fila/Casos/1/result_valgrind.txt.
@@ -343,12 +351,12 @@ Aluno: Daniel
  - Pastas Compiladas Corretamente: 5 de 5 
  - Pastas Linkadas Corretamente: 5 de 5
  - Teste main
- - Resultados corretos: 0 de 8
- - Valgrinds corretos: 8 de 8
- - Nota de Daniel para o teste main: 0
+ - Resultados corretos: 5 de 8
+ - Valgrinds corretos: 2 de 8
+ - Nota de Daniel para o teste main: 3.22
  - Teste completo
- - Resultados corretos: 0 de 8
- - Valgrinds corretos: 8 de 8
+ - Resultados corretos: 5 de 8
+ - Valgrinds corretos: 2 de 8
  - Nota de Daniel para o teste completo: 0
  - Teste fila
  - Resultados corretos: 8 de 8
@@ -362,8 +370,8 @@ Aluno: Daniel
  - Resultados corretos: 8 de 8
  - Valgrinds corretos: 8 de 8
  - Nota de Daniel para o teste software: .50
- - Nota de Daniel: 0+(1.00)+(1.00)+(0)+(0)+(.50)
- - Nota de Daniel: 2.50
+ - Nota de Daniel: 0+(1.00)+(1.00)+(3.22)+(0)+(.50)
+ - Nota de Daniel: 5.72
 
 ----------------------------------------------------------------------------
 

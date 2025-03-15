@@ -15,9 +15,17 @@ char* getSetorUsuario(Usuario *u);
 
 void incrementaTicketsSolicitados(Usuario *u);
 
+void diminuiTicketsSolicitados(Usuario *u);
+
+int getQtdTicketsUsuario(Usuario *u);
+
+Data* getDataNascimentoUsuario(Usuario *u);
+
 char getTipoUsuario();
 
 char* getCPFUsuario(Usuario *u);
+
+char* getNomeUsuario(Usuario *u);
 
 void desalocaUsuario(void *u);
 

@@ -1,33 +1,181 @@
-<<<<<<< HEAD
-==112728== Memcheck, a memory error detector
-==112728== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==112728== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==112728== Command: Resultados/Daniel/completo/prog Resultados/Daniel/completo/Casos/7
-==112728== Parent PID: 112727
-==112728== 
-==112728== 
-==112728== HEAP SUMMARY:
-==112728==     in use at exit: 0 bytes in 0 blocks
-==112728==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==112728== 
-==112728== All heap blocks were freed -- no leaks are possible
-==112728== 
-==112728== For lists of detected and suppressed errors, rerun with: -s
-==112728== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-=======
-==144765== Memcheck, a memory error detector
-==144765== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==144765== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==144765== Command: Resultados/Daniel/completo/prog Resultados/Daniel/completo/Casos/7
-==144765== Parent PID: 144764
-==144765== 
-==144765== 
-==144765== HEAP SUMMARY:
-==144765==     in use at exit: 0 bytes in 0 blocks
-==144765==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==144765== 
-==144765== All heap blocks were freed -- no leaks are possible
-==144765== 
-==144765== For lists of detected and suppressed errors, rerun with: -s
-==144765== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
->>>>>>> 7fb517a7cc3a6596606b0ab2708f800bc94fcd5f
+==387035== Memcheck, a memory error detector
+==387035== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==387035== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==387035== Command: Resultados/Daniel/completo/prog Resultados/Daniel/completo/Casos/7
+==387035== Parent PID: 387034
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==387035==    by 0x10AC6D: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x10AC70: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==387035==    by 0x10AC99: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x10AC9C: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==387035==    by 0x10ACC2: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x10ACC5: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==387035==    by 0x10ACE2: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x10ACE5: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x484FBDC: strcmp (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==387035==    by 0x10AD02: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x10AD05: setTempoEstimadoManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A7C3: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x109573: distribuiTickets (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A940: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D6AD6: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8A1: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Use of uninitialised value of size 8
+==387035==    at 0x48BA2EB: _itoa_word (_itoa.c:177)
+==387035==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8A1: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48BA2FC: _itoa_word (_itoa.c:177)
+==387035==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8A1: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D65C3: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8A1: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D5C05: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8A1: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D6AD6: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8BE: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Use of uninitialised value of size 8
+==387035==    at 0x48BA2EB: _itoa_word (_itoa.c:177)
+==387035==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8BE: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48BA2FC: _itoa_word (_itoa.c:177)
+==387035==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8BE: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D65C3: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8BE: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D5C05: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10B8BE: imprimeTecnico (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x109C25: imprimeBancoDeTecnicos (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A9DC: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D6AD6: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10AE29: notificaManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10BAB9: notificaTicket (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x1098F7: notificaFila (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A981: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Use of uninitialised value of size 8
+==387035==    at 0x48BA2EB: _itoa_word (_itoa.c:177)
+==387035==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10AE29: notificaManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10BAB9: notificaTicket (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x1098F7: notificaFila (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A981: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48BA2FC: _itoa_word (_itoa.c:177)
+==387035==    by 0x48D5ABD: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10AE29: notificaManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10BAB9: notificaTicket (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x1098F7: notificaFila (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A981: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D65C3: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10AE29: notificaManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10BAB9: notificaTicket (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x1098F7: notificaFila (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A981: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== Conditional jump or move depends on uninitialised value(s)
+==387035==    at 0x48D5C05: __vfprintf_internal (vfprintf-internal.c:1516)
+==387035==    by 0x48C079E: printf (printf.c:33)
+==387035==    by 0x10AE29: notificaManutencao (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10BAB9: notificaTicket (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x1098F7: notificaFila (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035==    by 0x10A981: main (in /home/ds/2024-2-template-TP1-etapa-1/Resultados/Daniel/completo/prog)
+==387035== 
+==387035== 
+==387035== HEAP SUMMARY:
+==387035==     in use at exit: 0 bytes in 0 blocks
+==387035==   total heap usage: 67 allocs, 67 frees, 13,550 bytes allocated
+==387035== 
+==387035== All heap blocks were freed -- no leaks are possible
+==387035== 
+==387035== Use --track-origins=yes to see where uninitialised values come from
+==387035== For lists of detected and suppressed errors, rerun with: -s
+==387035== ERROR SUMMARY: 28 errors from 26 contexts (suppressed: 0 from 0)

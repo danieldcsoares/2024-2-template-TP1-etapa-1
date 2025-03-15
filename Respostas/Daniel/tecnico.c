@@ -68,8 +68,20 @@ char* getAreaTecnico(Tecnico *t){
     return t->area;
 }
 
-void incrementaTempoTrabalhado(Tecnico *t){
-    t->tempoTrabalhado++;
+void incrementaTempoTrabalhado(Tecnico *t, int tempo){
+    t->tempoTrabalhado += tempo;
+}
+
+void diminuiDisponibilidade(Tecnico *t, int tempo){
+    t->disponibilidade -= tempo;
+}
+
+int getTempoTrabalhadoTecnico(Tecnico *t){
+    return t->tempoTrabalhado;
+}
+
+Data* getDataNascimentoTecnico(Tecnico *t){
+    return getDataNascimentoPessoa(t->pessoa);
 }
 
 char getTipoTecnico(){
@@ -78,6 +90,14 @@ char getTipoTecnico(){
 
 char* getCPFTecnico(Tecnico *t){
     return getCPFPessoa(t->pessoa);
+}
+
+int getDisponibilidadeTecnico(Tecnico *t){
+    return t->disponibilidade;
+}
+
+char* getNomeTecnico(Tecnico *t){
+    return getNomePessoa(t->pessoa);
 }
 
 void desalocaTecnico(void *t){
@@ -110,5 +130,5 @@ void imprimeTecnico(void *t){
     printf("- Area de Atuacao: %s\n", tec->area);
     printf("- Salario: %.2f\n", tec->salario);
     printf("- Disponibilidade: %dh\n", tec->disponibilidade);
-    printf("- Tempo trabalhado: %dh\n", tec->tempoTrabalhado);
+    printf("- Tempo Trabalhado: %dh\n", tec->tempoTrabalhado);
 }

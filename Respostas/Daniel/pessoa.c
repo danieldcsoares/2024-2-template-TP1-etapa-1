@@ -57,15 +57,13 @@ char *getCPFPessoa(Pessoa *p){
     return p->cpf;
 }
 
+Data* getDataNascimentoPessoa(Pessoa *p){
+    return p->dataNascimento;
+}
 
-/**
- * @brief Recupera o tipo de um Pessoa
- * @param t Pessoa inicializado
- * @return tipo do Pessoa
- */
-/*char getTipoPessoa(Pessoa *p){
-    return p->tipo(p->dado);
-}*/
+char* getNomePessoa(Pessoa *p){
+    return p->nome;
+}
 
 
 /**
@@ -91,7 +89,7 @@ void imprimePessoa(Pessoa *doc){
     printf("--------------------\n");
     printf("- Nome: %s\n", doc->nome);
     printf("- CPF: %s\n", doc->cpf);
-    printf("- Data de nascimento: ");
+    printf("- Data de Nascimento: ");
     imprimeData(doc->dataNascimento);
     printf("- Telefone: %s\n", doc->telefone);
     printf("- Genero: %s\n", doc->genero);
